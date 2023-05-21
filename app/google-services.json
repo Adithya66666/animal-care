@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1034301181326",
+    "firebase_url": "https://malshaaaa-default-rtdb.firebaseio.com",
+    "project_id": "malshaaaa",
+    "storage_bucket": "malshaaaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034301181326:android:65561e9b28bf1bb02ee8df",
+        "android_client_info": {
+          "package_name": "com.example.animalshealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034301181326-2svav8csb0rhuih17p5f7qproelvj5qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6NoIIFhm35jji825A7336g-psSTK_MYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034301181326-2svav8csb0rhuih17p5f7qproelvj5qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
