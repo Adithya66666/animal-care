@@ -29,50 +29,18 @@ class Dashboard : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.refresh.setOnClickListener{
-            readData()
+            Toast.makeText(this, "Data refreshed", Toast.LENGTH_SHORT).show()
         }
 
         bmiRecyclerView = binding.deviceList
         bmiRecyclerView.layoutManager = LinearLayoutManager(this)
         bmiRecyclerView.setHasFixedSize(true)
         deviceArray = arrayListOf<Device>()
-
-        readData()
-
-    }
-
-    private fun readData(){
-        deviceArray.clear()
-        deviceIdArray.clear()
-        binding.deviceLoading.visibility = View.VISIBLE
-        binding.deviceList.visibility = View.GONE
-        FirebaseDatabase.getInstance().getReference("").addValueEventListener(object :
-            ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if(snapshot.exists()){
-                    for(fineSnapshot in snapshot.children){
-
-                        deviceIdArray += fineSnapshot.key.toString()
-
-                        val deviceItem =  fineSnapshot.getValue(Device::class.java)
-                        deviceArray.add(deviceItem!!)
-                    }
-                    bmiRecyclerView.adapter = DeviceAdapter(deviceArray,this@Dashboard)
-                }
-                binding.deviceLoading.visibility = View.GONE
-                binding.deviceList.visibility = View.VISIBLE
-            }
-            override fun onCancelled(error: DatabaseError) {
-
-            }
-        })
-    }
-
-    fun onItemClick(position: Int) {
-        var intent = Intent(this,ViewDevice::class.java).also {
-            it.putExtra("deviceId",deviceIdArray?.get(position))
-            it.putExtra("deviceName",position)
+        
+        binding.device01.setOnClickListener{
+            var intent = Intent(this,ViewDevice::class.java)
+            startActivity(intent)
         }
-        startActivity(intent)
+        
     }
 }

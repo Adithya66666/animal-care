@@ -178,7 +178,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Moving"
+                        android:text="Loading..."
                         android:fontFamily="@font/poppinssemibold"
                         android:textSize="20dp"/>
                 </LinearLayout>
@@ -212,7 +212,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Accelerometer"
+                        android:text="Humidity"
                         android:textSize="17dp"/>
 
                     <TextView
@@ -220,7 +220,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Moving"
+                        android:text="Loading..."
                         android:fontFamily="@font/poppinssemibold"
                         android:textSize="20dp"/>
                 </LinearLayout>
@@ -254,15 +254,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Accelerometer"
+                        android:text="Temperature"
                         android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/tempValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Loading..." />
 
                     <TextView
                         android:id="@+id/tempStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Moving"
+                        android:text="Loading..."
                         android:fontFamily="@font/poppinssemibold"
                         android:textSize="20dp"/>
                 </LinearLayout>
@@ -296,7 +303,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Accelerometer"
+                        android:text="Raining"
                         android:textSize="17dp"/>
 
                     <TextView
@@ -304,7 +311,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Moving"
+                        android:text="Loading..."
                         android:fontFamily="@font/poppinssemibold"
                         android:textSize="20dp"/>
                 </LinearLayout>
@@ -342,6 +349,13 @@
                         android:text="Location"
                         android:fontFamily="@font/poppinssemibold"
                         android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="View Live Location" />
                 </LinearLayout>
 
             </LinearLayout>

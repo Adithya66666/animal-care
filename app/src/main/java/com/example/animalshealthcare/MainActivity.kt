@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
 import com.example.animalshealthcare.databinding.ActivityMainBinding
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +40,5 @@ class MainActivity : AppCompatActivity() {
                 finish()
             },3000)
         }
-
     }
 }
