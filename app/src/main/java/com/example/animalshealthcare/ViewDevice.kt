@@ -78,7 +78,7 @@ import com.google.firebase.ktx.Firebase
 
                 binding.tempValue.text = temp
 
-                if(temp.toFloat() >= 100){
+                if(temp.toFloat() >= 50){
                     binding.tempStatus.text = "Higher Temperature"
                 }else{
                     binding.tempStatus.text = "Normal Temperature"
@@ -141,7 +141,7 @@ import com.google.firebase.ktx.Firebase
 
                 binding.tempValue.text = temp
 
-                if (temp.toFloat() >= 100) {
+                if (temp.toFloat() >= 50) {
                     binding.tempStatus.text = "Higher Temperature"
                 } else {
                     binding.tempStatus.text = "Normal Temperature"
